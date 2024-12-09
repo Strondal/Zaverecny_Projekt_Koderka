@@ -1,5 +1,5 @@
-$pozadi: #FEF9F4;
-$paticka: #D3C3BA;
+$pozadi: hsl(25, 83%, 93%);
+$paticka: #bfaa9d;
 $barva: red;
 $pismo_hlavicka: white;
 $font: 'lexend tera'; 
@@ -30,7 +30,7 @@ body {
     background-image: url($hlavickaimg);
     background-size: cover;
     padding: 20px 0 20px 0;
-    height: 280px;
+    height: 290px;
     width:100%;
     
 }
@@ -40,7 +40,7 @@ h1 {
     font-family: $font;
     //display:flex;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 200;
     margin: 0;
      
@@ -64,7 +64,6 @@ h1 {
     margin-top: 10px;
     //margin-left: 100px;
     //margin-right: 100px;
-    display: flex;
     justify-content: center;
     padding:10px 20px;
     
@@ -77,35 +76,42 @@ a {
     color:$pismo_hlavicka;
 }
 
+
 .uvod{
     text-align: center;
-    //background-color: $pozadi;
-    border-image: url($uvodimg);
+    background-color: $pozadi;
+    //background-image: url($uvodimg);
+    //background-size: cover;
+    //opacity: 0.3;
     height: calc(100vh - 190px);
     padding: 15px 10px 20px 10px;
 
+   
     
 }
 .footer {
     background-color: $paticka;
     height: 30px;
-    position: absolute;
-    bottom:0;
     width: 100%;
     display: flex;
     color: white;
     justify-content: space-between;
-    font-size: 10px;
-    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    padding: 5px 0;
     
     
 }
 .footer_in{
         display:flex;
     flex-direction: column;
+    margin-right: 5px;
 
 }
 
+.footer_text {
+    margin: 5px 0 0 5px;
+    
+}
 
 
 @media screen and (min-width: 900px)
@@ -151,18 +157,18 @@ a {
     .footer {
     background-color: $paticka;
     height: 40px;
-    position: absolute;
-    bottom:0;
     width: 100%;
     display: flex;
 
     }
     .footer_text {
-
+        display: flex;
     }
-    .footer_in{
+    /*.footer_in{
     display:flex;
     flex-direction: column;
-    }
+    position: absolute;
+    bottom:10px;
+    }*/
 
 }
