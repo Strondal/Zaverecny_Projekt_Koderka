@@ -172,3 +172,55 @@ a {
     }*/
 
 }
+
+
+
+
+// stylování domecky//
+
+.domecky {
+    display: flex;
+    flex-direction: column;   
+    
+}
+
+.uvod__domecky,
+.domecek1,
+.domecek2,
+.domecek3,
+.domecek4 {
+    display:flex;
+    margin-top: 10px;
+    position:relative;
+}
+
+.img__domecky {
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+    opacity:0.3;
+    
+}
+
+h2 {
+    position:absolute;
+    right: 30px;
+    color: #563719;
+    margin: 40px 0 0 0;
+    font-size: 25px;
+}
+
+.img__domecek1,
+.img__domecek2,
+.img__domecek3,
+.img__domecek4 {
+    width: 160px;
+    border-radius: 20px;
+    
+}
+
+.domecek2,
+.domecek4 {
+    flex-direction: row-reverse;
+}
+
