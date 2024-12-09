@@ -4,6 +4,7 @@ $barva: red;
 $pismo_hlavicka: white;
 $font: 'lexend tera'; 
 $hlavickaimg: '/images/uvod.jpg';
+$uvodimg: '/images/banka.jpg';
 
 
 
@@ -27,9 +28,9 @@ body {
 
 .header {
     background-image: url($hlavickaimg);
-    //background-color: #c83d4a;
+    background-size: cover;
     padding: 20px 0 20px 0;
-    height:150px;
+    height: 280px;
     width:100%;
     
 }
@@ -59,10 +60,13 @@ h1 {
 .menu li {
     border: 1px solid $pismo_hlavicka;
     border-radius: 20px;
-    font-size: 10px;
-    margin-bottom: 5px;
-    margin-left: 100px;
-    margin-right: 100px;
+    font-size: 16px;
+    margin-top: 10px;
+    //margin-left: 100px;
+    //margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    padding:10px 20px;
     
 
 }
@@ -75,9 +79,11 @@ a {
 
 .uvod{
     text-align: center;
-    background-color: $pozadi;
+    //background-color: $pozadi;
+    border-image: url($uvodimg);
     height: calc(100vh - 190px);
     padding: 15px 10px 20px 10px;
+
     
 }
 .footer {
