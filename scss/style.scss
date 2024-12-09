@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-    background-image: url($hlavickaimg:);
+    background-image: url($hlavickaimg);
     //background-color: #c83d4a;
     padding: 20px 0 20px 0;
     height:150px;
@@ -63,6 +63,8 @@ h1 {
     margin-bottom: 5px;
     margin-left: 100px;
     margin-right: 100px;
+    
+
 }
 
 a {
@@ -100,7 +102,7 @@ a {
 
 
 
-@media screen and (min-width: 1050px)
+@media screen and (min-width: 900px)
 {
 
     body {

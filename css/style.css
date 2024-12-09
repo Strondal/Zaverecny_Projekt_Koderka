@@ -15,7 +15,7 @@ body {
 }
 
 .header {
-  background-color: #c83d4a;
+  background-image: url("/images/uvod.jpg");
   padding: 20px 0 20px 0;
   height: 150px;
   width: 100%;
@@ -80,7 +80,7 @@ a {
   flex-direction: column;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 900px) {
   body {
     margin: 0;
   }
