@@ -1,0 +1,160 @@
+$pozadi: #FEF9F4;
+$paticka: #D3C3BA;
+$barva: red;
+$pismo_hlavicka: white;
+$font: 'lexend tera'; 
+$hlavickaimg: '/images/uvod.jpg';
+
+
+
+* {
+    font-family: $font;
+}
+
+body {
+    margin: 0;
+    
+}
+
+
+.celek{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.header {
+    background-image: url($hlavickaimg:);
+    //background-color: #c83d4a;
+    padding: 20px 0 20px 0;
+    height:150px;
+    width:100%;
+    
+}
+
+h1 {
+    color: $pismo_hlavicka;
+    font-family: $font;
+    //display:flex;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    margin: 0;
+     
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 400;
+    margin: 0 20px 0 20px;
+    padding:0;
+    
+}
+
+.menu li {
+    border: 1px solid $pismo_hlavicka;
+    border-radius: 20px;
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none; 
+    color:inherit;
+    color:$pismo_hlavicka;
+}
+
+.uvod{
+    text-align: center;
+    background-color: $pozadi;
+    height: calc(100vh - 190px);
+    padding: 15px 10px 20px 10px;
+    
+}
+.footer {
+    background-color: $paticka;
+    height: 30px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+    
+    
+}
+.footer_in{
+        display:flex;
+    flex-direction: column;
+
+}
+
+
+
+@media screen and (min-width: 1050px)
+{
+
+    body {
+        margin: 0;
+        //width:100%;
+        //height:100%;
+        
+    }
+    .header {
+    
+        //padding: 50px 100px 20px 100px;
+        height:180px;
+    }
+
+    h1 {
+        justify-content: center;
+        font-size: 60px;
+        padding-bottom: 35px;          
+    }
+
+    .menu {
+    flex-direction: row;    
+    justify-content: space-between;
+    //padding: 0 50px 0 50px;
+    margin: 0 70px 0 70px;
+    }
+
+    .menu li {
+    padding: 7px 10px;
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    }
+
+
+    .uvod {
+    padding: 15px 10px 20px 10px;
+    }
+
+    .footer {
+    background-color: $paticka;
+    height: 40px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display: flex;
+
+    }
+    .footer_text {
+
+    }
+    .footer_in{
+    display:flex;
+    flex-direction: column;
+    }
+
+}
