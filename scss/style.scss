@@ -2,7 +2,8 @@ $pozadi: hsl(25, 83%, 93%);
 $paticka: #bfaa9d;
 $barva: red;
 $pismo_hlavicka: white;
-$font: 'lexend tera'; 
+$font: 'lexend tera';
+$fontmega: 'lexend mega';
 $hlavickaimg: '/images/uvod.jpg';
 $uvodimg: '/images/banka.jpg';
 
@@ -186,6 +187,7 @@ p {
 .domecky {
     display: flex;
     flex-direction: column; 
+    margin:10px
    
     
 }
@@ -206,7 +208,7 @@ p {
 
 .img__domecky {
     //position: absolute;
-    left: 20px;
+    //left: 20px;
     height: 10%px;
     width: 70%;
     border-radius: 20px;
@@ -214,7 +216,7 @@ p {
     
 }
 
-h2 {
+.nadpis__domecky {
     position:absolute;
     right: 30px;
     color: #563719;
@@ -240,9 +242,10 @@ h2 {
 .domecek2 p,
 .domecek3 p,
 .domecek4 p {
-   padding: 10px 2px;
+   padding: 20px 5px;
    font-size: 13px;
-   font-family: 'lexend mega';
+   font-family: $fontmega;
+   text-align: center;
 }
 
 
@@ -251,7 +254,7 @@ h2 {
     .domecky {
         margin: 0 40px;
     }
- h2 {
+.nadpis__domecky {
     font-size: 40px;
     right: 120px;
     top:300px
@@ -286,9 +289,9 @@ h2 {
 
 @media screen and (min-width: 1100px) {
     
-    h2 {
-        font-size: 60px;
-        right: 120px;
+    .nadpis__domecky {
+        font-size: 50px;
+        right: 190px;
         top:300px
         }
     
@@ -312,3 +315,39 @@ h2 {
     }
 
 }
+
+
+
+
+
+
+
+/* stylování jaktovzniklo*/
+
+.jaktovzniklo {
+    display: flex;
+    flex-direction: column;
+}
+.hlavicka__jaktovzniklo {
+    display: flex;
+}
+
+.img__jaktovzniklo {
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+.nadpis__jaktovzniklo {
+    position:absolute;
+    right: 30px;
+    top:470px;
+    color: #563719;
+    margin: 0;
+    font-size: 25px;
+}
+ .text__jaktovzniklo p {
+    text-align: center;
+    font-family: $fontmega;
+ }
