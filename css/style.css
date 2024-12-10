@@ -18,7 +18,7 @@ body {
   background-image: url("/images/uvod.jpg");
   background-size: cover;
   padding: 20px 0 20px 0;
-  height: 290px;
+  height: 280px;
   width: 100%;
 }
 
@@ -31,13 +31,17 @@ h1 {
   margin: 0;
 }
 
+/** {
+    box-sizing:border;
+}*/
 .menu {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   text-align: center;
+  justify-content: center;
   font-weight: 400;
-  margin: 0 20px 0 20px;
+  margin: 0 60px;
   padding: 0;
 }
 
@@ -46,8 +50,9 @@ h1 {
   border-radius: 20px;
   font-size: 16px;
   margin-top: 10px;
-  justify-content: center;
   padding: 10px 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 a {
@@ -59,8 +64,13 @@ a {
 .uvod {
   text-align: center;
   background-color: hsl(25, 83%, 93%);
-  height: calc(100vh - 190px);
+  height: calc(100vh - 300px);
   padding: 15px 10px 20px 10px;
+}
+
+p {
+  font-size: 17px;
+  margin: 0;
 }
 
 .footer {
@@ -138,12 +148,12 @@ a {
 .domecek4 {
   display: flex;
   margin-top: 10px;
-  position: relative;
 }
 
 .img__domecky {
-  height: 120px;
-  width: auto;
+  left: 20px;
+  height: 10% px;
+  width: 70%;
   border-radius: 20px;
   opacity: 0.3;
 }
@@ -153,18 +163,25 @@ h2 {
   right: 30px;
   color: #563719;
   margin: 40px 0 0 0;
-  font-size: 25px;
 }
 
 .img__domecek1,
 .img__domecek2,
 .img__domecek3,
 .img__domecek4 {
-  width: 160px;
+  width: 120px;
   border-radius: 20px;
 }
 
 .domecek2,
 .domecek4 {
   flex-direction: row-reverse;
+}
+
+.domecek1 p,
+.domecek2 p,
+.domecek3 p,
+.domecek4 p {
+  padding: 10px 5px;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
