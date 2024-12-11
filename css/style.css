@@ -42,7 +42,7 @@ h1 {
   text-align: center;
   justify-content: center;
   font-weight: 400;
-  margin: 0 60px;
+  margin: 0 20%;
   padding: 0;
 }
 
@@ -140,11 +140,8 @@ p {
 .domecky {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-}
-
-.domecky_uvod {
-  height: calc(100vh - 400px);
+  padding: 10px;
+  background-color: hsl(25, 83%, 93%);
 }
 
 .uvod__domecky,
@@ -157,7 +154,7 @@ p {
 }
 
 .img__domecky {
-  height: 10% px;
+  height: 10%;
   width: 70%;
   border-radius: 20px;
   opacity: 0.3;
@@ -195,9 +192,9 @@ p {
 }
 
 @media screen and (min-width: 900px) {
-  .domecky {
-    margin: 0 40px;
-  }
+  /*.domecky {
+      margin: 0 40px;
+  }*/
   .nadpis__domecky {
     font-size: 40px;
     right: 120px;
@@ -248,6 +245,8 @@ p {
 .jaktovzniklo {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  background-color: hsl(25, 83%, 93%);
 }
 
 .hlavicka__jaktovzniklo {
@@ -255,7 +254,7 @@ p {
 }
 
 .img__jaktovzniklo {
-  height: 300px;
+  width: 40%;
   margin: 20px;
   border-radius: 20px;
   opacity: 0.3;
@@ -270,7 +269,37 @@ p {
   font-size: 25px;
 }
 
-.text__jaktovzniklo p {
-  text-align: center;
-  font-family: "lexend mega";
+/*
+
+ .odstavce__jaktovzniklo {
+       // width:150px;
+        font-family: $fontmega;
+
+ }*/
+@media screen and (min-width: 900px) {
+  .img__jaktovzniklo {
+    width: 25%;
+    margin: 5%;
+    border-radius: 20px;
+    opacity: 0.3;
+  }
+  .nadpis__jaktovzniklo {
+    right: 50px;
+    font-size: 45px;
+  }
+  .odstavce__jaktovzniklo {
+    margin-top: 5px;
+    font-family: "lexend mega";
+    position: absolute;
+    top: 580px;
+    right: 30px;
+    width: 60%;
+    text-align: right;
+  }
+}
+.img__postavicky {
+  height: 10%;
+  width: 70%;
+  border-radius: 20px;
+  opacity: 0.3;
 }/*# sourceMappingURL=style.css.map */
