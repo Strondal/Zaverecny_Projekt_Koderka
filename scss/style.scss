@@ -333,7 +333,7 @@ p {
 
 .img__jaktovzniklo {
     width: 40%;
-    margin: 20px;
+    margin: 5%;
     border-radius: 20px;
     opacity: 0.3;
 }
@@ -385,7 +385,7 @@ p {
  }
 
 
- // stylování postavicky 
+ // stylování postavicky //
 
  .img__postavicky {
     height: 10%;
@@ -393,4 +393,32 @@ p {
     border-radius: 20px;
     opacity:0.3;
     
+}
+
+
+
+
+
+//stylování kdo jsem?//
+ .kdojsem {
+display: flex;
+ flex-direction: column;
+ text-align: center;
+ background-color: $pozadi;
+  }
+
+.img__kdojsem {
+    width: 40%;
+    margin: 20px;
+    border-radius: 20px;
+    opacity: 0.3;
+}
+
+.nadpis__kdojsem {
+    position:absolute;
+    right: 30px;
+    top:470px;
+    color: #563719;
+    margin: 0;
+    font-size: 25px;
 }
