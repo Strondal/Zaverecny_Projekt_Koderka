@@ -397,7 +397,7 @@ p {
 
 //stylování kdo jsem?//
  .kdojsem {
-display: flex;
+ display: flex;
  flex-direction: column;
  text-align: center;
  background-color: $pozadi;
@@ -412,14 +412,26 @@ display: flex;
 
 .nadpis__kdojsem {
     position:absolute;
-    right: 30px;
+    right: 50px;
     top:470px;
     color: #563719;
     margin: 0;
     font-size: 25px;
 }
 
+.text__kdojsem {
+    padding:10px;
+    font-family: $fontmega;
+    }
 
+.img__ja {
+    width: 30%;
+    float: right;
+    margin: 5px 10px 10px 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+    
+}
 
 @media screen and (min-width: 900px)
 { 
@@ -429,9 +441,19 @@ display: flex;
        border-radius: 20px;
        opacity: 0.3;
    }
+
    .nadpis__kdojsem {
-       right: 50px;
-       font-size: 45px;
+    font-size: 45px;
    }
+   .text__kdojsem {
+    margin-top: 5px;
+    font-family: $fontmega;
+    position: absolute;
+    top: 580px;
+    right: 30px;
+    width: 60%;
+    text-align: right; 
+}
+
 }
 

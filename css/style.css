@@ -269,13 +269,10 @@ p {
   font-size: 25px;
 }
 
-/*
+.odstavce__jaktovzniklo {
+  padding: 10px;
+}
 
- .odstavce__jaktovzniklo {
-       // width:150px;
-        font-family: $fontmega;
-
- }*/
 @media screen and (min-width: 900px) {
   .img__jaktovzniklo {
     width: 25%;
@@ -313,16 +310,50 @@ p {
 
 .img__kdojsem {
   width: 40%;
-  margin: 20px;
+  margin: 5%;
   border-radius: 20px;
   opacity: 0.3;
 }
 
 .nadpis__kdojsem {
   position: absolute;
-  right: 30px;
+  right: 50px;
   top: 470px;
   color: #563719;
   margin: 0;
   font-size: 25px;
+}
+
+.text__kdojsem {
+  padding: 10px;
+  font-family: "lexend mega";
+}
+
+.img__ja {
+  width: 30%;
+  float: right;
+  margin: 5px 10px 10px 10px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .img__kdojsem {
+    width: 25%;
+    margin: 5%;
+    border-radius: 20px;
+    opacity: 0.3;
+  }
+  .nadpis__kdojsem {
+    font-size: 45px;
+  }
+  .text__kdojsem {
+    margin-top: 5px;
+    font-family: "lexend mega";
+    position: absolute;
+    top: 580px;
+    right: 30px;
+    width: 60%;
+    text-align: right;
+  }
 }/*# sourceMappingURL=style.css.map */
