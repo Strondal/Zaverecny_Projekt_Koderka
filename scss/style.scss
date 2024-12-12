@@ -405,7 +405,7 @@ display: flex;
 
 .img__kdojsem {
     width: 40%;
-    margin: 20px;
+    margin: 5%;
     border-radius: 20px;
     opacity: 0.3;
 }
@@ -419,7 +419,19 @@ display: flex;
     font-size: 25px;
 }
 
-.text__kdojsem {
-    padding: 
+
+
+@media screen and (min-width: 900px)
+{ 
+   .img__kdojsem {
+       width: 25%;
+       margin: 5%;
+       border-radius: 20px;
+       opacity: 0.3;
+   }
+   .nadpis__kdojsem {
+       right: 50px;
+       font-size: 45px;
+   }
 }
-//uprava podle jaktovzniklo
+
