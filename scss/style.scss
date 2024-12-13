@@ -39,16 +39,13 @@ body {
 h1 {
     color: $pismo_hlavicka;
     font-family: $font;
-    //display:flex;
     text-align: center;
     font-size: 35px;
     font-weight: 200;
     margin: 0;
      
 }
- /** {
-    box-sizing:border;
-}*/
+ 
 .menu {
     display: flex;
     flex-direction: column;
@@ -83,17 +80,18 @@ a {
 .uvod{
     text-align: center;
     background-color: $pozadi;
-    //background-image: url($uvodimg);
-    //background-size: cover;
-    //opacity: 0.3;
     height: calc(100vh - 300px);
     padding: 15px 10px 20px 10px;
     
+    
 }
-
+.uvod__text {
+    margin: 50px;
+}
 p {
     font-size: 17px;
     margin: 0;
+    
 }
 .footer {
     background-color: $paticka;
@@ -132,7 +130,7 @@ p {
     .header {
     
         //padding: 50px 100px 20px 100px;
-        height:180px;
+        height:200px;
     }
 
     h1 {
@@ -170,12 +168,7 @@ p {
     .footer_text {
         display: flex;
     }
-    /*.footer_in{
-    display:flex;
-    flex-direction: column;
-    position: absolute;
-    bottom:10px;
-    }*/
+    
 
 }
 
@@ -215,7 +208,7 @@ p {
 
 .nadpis__domecky {
     position:absolute;
-    right: 30px;
+    right: 60px;
     color: #563719;
     margin: 40px 0 0 0;
     font-size: 25px;
@@ -230,8 +223,8 @@ p {
     
 }
 
-.domecek2,
-.domecek4 {
+.domecek1,
+.domecek3 {
     flex-direction: row-reverse;
 }
 
@@ -245,12 +238,10 @@ p {
    text-align: center;
 }
 
-
+/*
 @media screen and (min-width: 900px) {
 
-    /*.domecky {
-        margin: 0 40px;
-    }*/
+   
 .nadpis__domecky {
     font-size: 40px;
     right: 120px;
@@ -282,13 +273,19 @@ p {
 }
 
 
-}
+}*/
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
+    
+    .img__domecky {
+        height: 10%;
+        width: 60%;
+        margin-left: 20px;
+    }
     
     .nadpis__domecky {
         font-size: 50px;
-        right: 190px;
+        right: 300px;
         top:300px
         }
     
@@ -300,6 +297,16 @@ p {
         border-radius: 20px;
         
     } 
+
+    .img__domecek1,
+    .img__domecek3 {
+        margin-right: 20px;
+    }
+    .img__domecek2,
+    .img__domecek4 {
+        margin-left: 20px;
+    }
+
 
     .domecek1 p,
     .domecek2 p,
@@ -366,6 +373,7 @@ p {
     .nadpis__jaktovzniklo {
         right: 50px;
         font-size: 45px;
+        top:400px;
     }
  
 
@@ -373,7 +381,7 @@ p {
     margin-top: 5px;
     font-family: $fontmega;
     position: absolute;
-    top: 580px;
+    top: 450px;
     right: 30px;
     width: 60%;
     text-align: right; 
@@ -383,13 +391,110 @@ p {
 
  // stylování postavicky //
 
- .img__postavicky {
+ .postavicky {
+    display: flex;
+    flex-direction: column; 
+    padding:10px;
+    background-color: $pozadi;
+   
+    
+}
+ 
+.uvod__postavicky,
+.postavicka1,
+.postavicka2,
+.postavicka3,
+.postavicka4 {
+    display:flex;
+    margin-top: 10px;
+    
+}
+
+.img__postavicky {
     height: 10%;
     width: 70%;
     border-radius: 20px;
     opacity:0.3;
     
 }
+
+.nadpis__postavicky {
+   // position:absolute;
+    right: 70px;
+    color: #563719;
+   // margin: 40px 0 0 0;
+    font-size: 25px;
+}
+/*
+.img__postavicka1,
+.img__postavicka2,
+.img__postavicka3,
+.img__postavicka4 {
+    width: 120px;
+    border-radius: 20px;
+    
+}
+
+.postavicka1,
+.postavicka3 {
+    flex-direction: row-reverse;
+}
+
+.postavicka1 p,
+.postavicka2 p,
+.postavicka3 p,
+.postavicka4 p {
+   padding: 20px 5px;
+   font-size: 13px;
+   font-family: $fontmega;
+   text-align: center;
+}*/
+
+
+/*@media screen and (min-width: 900px) {
+    
+    .img__postavicky {
+        height: 10%;
+        width: 60%;
+        margin-left: 20px;
+    }
+    
+    .nadpis__postavicky {
+        font-size: 50px;
+        right: 300px;
+        top:300px
+        }
+    
+    .img__postavicka1,
+    .img__postavicka2,
+    .img__postavicka3,
+    .img__postavicka4 {
+        width: 470px;
+        border-radius: 20px;
+        
+    } 
+
+    .img__postavicka1,
+    .img__postavicka3 {
+        margin-right: 20px;
+    }
+    .img__postavicka2,
+    .img__postavicka4 {
+        margin-left: 20px;
+    }
+
+
+    .postavicka1 p,
+    .postavicka2 p,
+    .postavicka3 p,
+    .postavicka4 p {
+        display:flex;
+        padding: 290px 50px 20px 50px;
+        font-size: 20px;
+        
+    }
+
+}*/
 
 
 
@@ -444,15 +549,22 @@ p {
 
    .nadpis__kdojsem {
     font-size: 45px;
+    top:350px;
+   }
+
+   .img_text__kdojsem {
+    position: absolute;
+    width: 60%;
+    top: 400px;
+    right: 30px;
    }
    .text__kdojsem {
     margin-top: 5px;
     font-family: $fontmega;
-    position: absolute;
-    top: 580px;
-    right: 30px;
-    width: 60%;
     text-align: right; 
+}
+.img__ja {
+    margin: 15px 10px 10px 20px;    
 }
 
 }

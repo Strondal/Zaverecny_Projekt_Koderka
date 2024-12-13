@@ -32,9 +32,6 @@ h1 {
   margin: 0;
 }
 
-/** {
-    box-sizing:border;
-}*/
 .menu {
   display: flex;
   flex-direction: column;
@@ -69,6 +66,10 @@ a {
   padding: 15px 10px 20px 10px;
 }
 
+.uvod__text {
+  margin: 50px;
+}
+
 p {
   font-size: 17px;
   margin: 0;
@@ -100,7 +101,7 @@ p {
     margin: 0;
   }
   .header {
-    height: 180px;
+    height: 200px;
   }
   h1 {
     justify-content: center;
@@ -130,12 +131,6 @@ p {
   .footer_text {
     display: flex;
   }
-  /*.footer_in{
-  display:flex;
-  flex-direction: column;
-  position: absolute;
-  bottom:10px;
-  }*/
 }
 .domecky {
   display: flex;
@@ -162,7 +157,7 @@ p {
 
 .nadpis__domecky {
   position: absolute;
-  right: 30px;
+  right: 60px;
   color: #563719;
   margin: 40px 0 0 0;
   font-size: 25px;
@@ -176,8 +171,8 @@ p {
   border-radius: 20px;
 }
 
-.domecek2,
-.domecek4 {
+.domecek1,
+.domecek3 {
   flex-direction: row-reverse;
 }
 
@@ -191,38 +186,51 @@ p {
   text-align: center;
 }
 
+/*
 @media screen and (min-width: 900px) {
-  /*.domecky {
-      margin: 0 40px;
-  }*/
-  .nadpis__domecky {
+
+
+.nadpis__domecky {
     font-size: 40px;
     right: 120px;
-    top: 300px;
-  }
-  .domecek1 {
-    margin-top: 20px;
-  }
-  .img__domecek1,
-  .img__domecek2,
-  .img__domecek3,
-  .img__domecek4 {
+    top:300px
+    }
+
+    .domecek1 {
+        margin-top: 20px;
+    }
+
+
+.img__domecek1,
+.img__domecek2,
+.img__domecek3,
+.img__domecek4 {
     width: 400px;
     border-radius: 20px;
-  }
-  .domecek1 p,
-  .domecek2 p,
-  .domecek3 p,
-  .domecek4 p {
-    display: flex;
+
+}
+
+.domecek1 p,
+.domecek2 p,
+.domecek3 p,
+.domecek4 p {
+    display:flex;
     padding: 50px 50px;
     font-size: 20px;
-  }
+
 }
-@media screen and (min-width: 1100px) {
+
+
+}*/
+@media screen and (min-width: 900px) {
+  .img__domecky {
+    height: 10%;
+    width: 60%;
+    margin-left: 20px;
+  }
   .nadpis__domecky {
     font-size: 50px;
-    right: 190px;
+    right: 300px;
     top: 300px;
   }
   .img__domecek1,
@@ -231,6 +239,14 @@ p {
   .img__domecek4 {
     width: 470px;
     border-radius: 20px;
+  }
+  .img__domecek1,
+  .img__domecek3 {
+    margin-right: 20px;
+  }
+  .img__domecek2,
+  .img__domecek4 {
+    margin-left: 20px;
   }
   .domecek1 p,
   .domecek2 p,
@@ -283,17 +299,34 @@ p {
   .nadpis__jaktovzniklo {
     right: 50px;
     font-size: 45px;
+    top: 400px;
   }
   .odstavce__jaktovzniklo {
     margin-top: 5px;
     font-family: "lexend mega";
     position: absolute;
-    top: 580px;
+    top: 450px;
     right: 30px;
     width: 60%;
     text-align: right;
   }
 }
+.postavicky {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: hsl(25, 83%, 93%);
+}
+
+.uvod__postavicky,
+.postavicka1,
+.postavicka2,
+.postavicka3,
+.postavicka4 {
+  display: flex;
+  margin-top: 10px;
+}
+
 .img__postavicky {
   height: 10%;
   width: 70%;
@@ -301,6 +334,80 @@ p {
   opacity: 0.3;
 }
 
+.nadpis__postavicky {
+  right: 70px;
+  color: #563719;
+  font-size: 25px;
+}
+
+/*
+.img__postavicka1,
+.img__postavicka2,
+.img__postavicka3,
+.img__postavicka4 {
+    width: 120px;
+    border-radius: 20px;
+
+}
+
+.postavicka1,
+.postavicka3 {
+    flex-direction: row-reverse;
+}
+
+.postavicka1 p,
+.postavicka2 p,
+.postavicka3 p,
+.postavicka4 p {
+   padding: 20px 5px;
+   font-size: 13px;
+   font-family: $fontmega;
+   text-align: center;
+}*/
+/*@media screen and (min-width: 900px) {
+
+    .img__postavicky {
+        height: 10%;
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .nadpis__postavicky {
+        font-size: 50px;
+        right: 300px;
+        top:300px
+        }
+
+    .img__postavicka1,
+    .img__postavicka2,
+    .img__postavicka3,
+    .img__postavicka4 {
+        width: 470px;
+        border-radius: 20px;
+
+    } 
+
+    .img__postavicka1,
+    .img__postavicka3 {
+        margin-right: 20px;
+    }
+    .img__postavicka2,
+    .img__postavicka4 {
+        margin-left: 20px;
+    }
+
+
+    .postavicka1 p,
+    .postavicka2 p,
+    .postavicka3 p,
+    .postavicka4 p {
+        display:flex;
+        padding: 290px 50px 20px 50px;
+        font-size: 20px;
+
+    }
+
+}*/
 .kdojsem {
   display: flex;
   flex-direction: column;
@@ -346,14 +453,20 @@ p {
   }
   .nadpis__kdojsem {
     font-size: 45px;
+    top: 350px;
+  }
+  .img_text__kdojsem {
+    position: absolute;
+    width: 60%;
+    top: 400px;
+    right: 30px;
   }
   .text__kdojsem {
     margin-top: 5px;
     font-family: "lexend mega";
-    position: absolute;
-    top: 580px;
-    right: 30px;
-    width: 60%;
     text-align: right;
+  }
+  .img__ja {
+    margin: 15px 10px 10px 20px;
   }
 }/*# sourceMappingURL=style.css.map */
