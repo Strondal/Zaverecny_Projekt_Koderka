@@ -160,6 +160,7 @@ a {
 
 .uvod__domecky {
   display: flex;
+  margin-top: 20px;
 }
 
 .domecek1,
@@ -359,6 +360,7 @@ a {
 
 .uvod__postavicky {
   display: flex;
+  margin-top: 20px;
 }
 
 .postavicka1,
