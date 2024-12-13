@@ -11,3 +11,5 @@ hlavvička
 
 
 google fonts - 5. video - základy
+
+úvodní stránka - velikost písma v textu je malé, jakmile jsem si rozjela stránky na mobilu tak vzhled stránky byl jiný než na počítači, ač jsem tam měla nastaven svůj telefon.
