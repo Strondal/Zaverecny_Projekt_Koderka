@@ -76,23 +76,36 @@ a {
     color:$pismo_hlavicka; 
 }
 
-
+/*.fotka {
+    display:flex;
+}
+.uvodni__mestecko {
+    width: 40%;
+    margin: 5%;
+    border-radius: 20px;
+    opacity: 0.3;
+    float: left;
+}*/
 .uvod{
     text-align: center;
     background-color: $pozadi;
     height: calc(100vh - 300px);
     padding: 15px 10px 20px 10px;
     
-    
+ 
 }
-.uvod__text {
-    margin: 50px;
+
+ 
+.prvni__odstavec {
+    font-size: 20px;
 }
-p {
+.druhy__odstavec,
+.treti__odstavec
+{
     font-size: 17px;
     margin: 0;
-    
-}
+ }
+
 .footer {
     background-color: $paticka;
     height: 30px;
@@ -158,6 +171,16 @@ p {
     padding: 15px 10px 20px 10px;
     }
 
+    .prvni__odstavec {
+        font-size: 30px;
+    }
+    .druhy__odstavec,
+    .treti__odstavec
+    {
+        font-size: 20px;
+        margin: 0;
+     }
+
     .footer {
     background-color: $paticka;
     height: 40px;
@@ -188,19 +211,24 @@ p {
 
 
 
-.uvod__domecky,
+.uvod__domecky{
+    display:flex;
+}
+
+
 .domecek1,
 .domecek2,
 .domecek3,
 .domecek4 {
-    display:flex;
-    margin-top: 10px;
+   // display:flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
 .img__domecky {
     height: 10%;
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
     opacity:0.3;
     
@@ -218,10 +246,20 @@ p {
 .img__domecek2,
 .img__domecek3,
 .img__domecek4 {
-    width: 120px;
+    width: 45%;
     border-radius: 20px;
+    margin: 10px 0 10px 10px;
     
 }
+.img__domecek1,
+.img__domecek3 {
+    float: right;
+       }
+
+.img__domecek2,
+.img__domecek4 {
+    float:left;
+    }
 
 .domecek1,
 .domecek3 {
@@ -229,13 +267,19 @@ p {
 }
 
 .domecek1 p,
-.domecek2 p,
-.domecek3 p,
-.domecek4 p {
-   padding: 20px 5px;
+.domecek3 p {
+padding: 10px 5px 10px 5px;
    font-size: 13px;
    font-family: $fontmega;
-   text-align: center;
+   text-align: left;
+}
+
+.domecek2 p,
+.domecek4 p {
+   padding: 10px 5px 10px 5px;
+   font-size: 13px;
+   font-family: $fontmega;
+   text-align: right;
 }
 
 /*
@@ -293,7 +337,7 @@ p {
     .img__domecek2,
     .img__domecek3,
     .img__domecek4 {
-        width: 470px;
+        width: 40%;
         border-radius: 20px;
         
     } 
@@ -301,6 +345,7 @@ p {
     .img__domecek1,
     .img__domecek3 {
         margin-right: 20px;
+       
     }
     .img__domecek2,
     .img__domecek4 {
@@ -313,7 +358,7 @@ p {
     .domecek3 p,
     .domecek4 p {
         display:flex;
-        padding: 290px 50px 20px 50px;
+        padding: 50px 50px 20px 50px;
         font-size: 20px;
         
     }
@@ -400,40 +445,57 @@ p {
     
 }
  
-.uvod__postavicky,
+.uvod__postavicky{
+    display:flex;
+}
+
+
 .postavicka1,
 .postavicka2,
 .postavicka3,
 .postavicka4 {
-    display:flex;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
 .img__postavicky {
     height: 10%;
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
     opacity:0.3;
     
 }
 
 .nadpis__postavicky {
-   // position:absolute;
-    right: 70px;
+    position:absolute;
+    right: 60px;
     color: #563719;
-   // margin: 40px 0 0 0;
+    margin: 40px 0 0 0;
     font-size: 25px;
 }
-/*
+
+
+
+
 .img__postavicka1,
 .img__postavicka2,
 .img__postavicka3,
 .img__postavicka4 {
-    width: 120px;
+    width: 45%;
     border-radius: 20px;
-    
+    margin: 10px 10px 10px 10px;   
 }
+
+.img__postavicka1,
+.img__postavicka3 {
+    float: right;
+       }
+
+.img__postavicka2,
+.img__postavicka4 {
+    float:left;
+    }
 
 .postavicka1,
 .postavicka3 {
@@ -444,14 +506,15 @@ p {
 .postavicka2 p,
 .postavicka3 p,
 .postavicka4 p {
-   padding: 20px 5px;
+    padding: 20px 5px 20px 5px;
    font-size: 13px;
    font-family: $fontmega;
    text-align: center;
-}*/
+}
 
 
-/*@media screen and (min-width: 900px) {
+
+@media screen and (min-width: 900px) {
     
     .img__postavicky {
         height: 10%;
@@ -494,7 +557,7 @@ p {
         
     }
 
-}*/
+}
 
 
 
