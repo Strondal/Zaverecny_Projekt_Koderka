@@ -6,6 +6,7 @@ $font: 'lexend tera';
 $fontmega: 'lexend mega';
 $hlavickaimg: '/images/uvod.jpg';
 $uvodimg: '/images/banka.jpg';
+$fontsize: 16px;
 
 
 
@@ -99,12 +100,14 @@ a {
 .prvni__odstavec {
     font-size: 18px;
     margin-top: 0;
+    font-family: $fontmega;
 }
 .druhy__odstavec,
 .treti__odstavec
 {
-    font-size: 13px;
+    //font-size: 13px;
     margin: 0;
+    font-family: $fontmega;
  }
 
 .footer {
