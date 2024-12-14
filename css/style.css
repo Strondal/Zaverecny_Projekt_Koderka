@@ -72,19 +72,20 @@ a {
 .uvod {
   text-align: center;
   background-color: hsl(25, 83%, 93%);
-  height: calc(100vh - 300px);
+  height: calc(100vh - 330px);
   padding: 15px 10px 20px 10px;
 }
 
 .prvni__odstavec {
   font-size: 18px;
   margin-top: 0;
+  font-family: "lexend mega";
 }
 
 .druhy__odstavec,
 .treti__odstavec {
-  font-size: 13px;
   margin: 0;
+  font-family: "lexend mega";
 }
 
 .footer {
