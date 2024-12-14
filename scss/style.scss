@@ -81,8 +81,8 @@ a {
 .uvod{
     text-align: center;
     background-color: $pozadi;
-    //height: calc(100vh - 230px);
-    //padding: 15px 10px 20px 10px;
+    height: calc(100vh - 230px);
+    padding: 15px 10px 20px 10px;
     
  
 }
@@ -95,8 +95,7 @@ a {
 }
 .druhy__odstavec,
 .treti__odstavec
-{
-    //font-size: 13px;
+{   font-size: 13px;
     margin: 0;
     font-family: $fontmega;
  }
@@ -399,6 +398,7 @@ padding: 10px 5px 10px 5px;
  .odstavce__jaktovzniklo {
        padding: 10px;
        font-family: $fontmega;
+       font-size: 13px;
         
  }
 
@@ -588,6 +588,7 @@ padding: 10px 5px 10px 5px;
 .text__kdojsem {
     padding:10px;
     font-family: $fontmega;
+    font-size: 13px;
     }
 
 .img__ja {
