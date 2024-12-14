@@ -44,19 +44,35 @@ h1 {
 }
 
 .menu li {
-  border: 1px solid white;
-  border-radius: 20px;
   font-size: 14px;
   margin-top: 10px;
   padding: 10px 20px;
+  width: 220px;
   justify-content: center;
   text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   color: white;
+}
+
+/*.menu li a {
+    border: 1px solid $pismo_hlavicka;
+    border-radius: 20px;
+    padding:10px 20px;
+    margin-top: 10px;
+}*/
+.menu li a:hover {
+  color: #c0b268; /* Barva textu při hover */
+  border-color: #c0b268; /* Barva rámečku při hover */
+}
+
+a:hover {
+  color: #c0b268; /* Barva textu při hover */
 }
 
 .uvod {
@@ -122,6 +138,13 @@ a {
     font-size: 20px;
     margin-right: 0;
     margin-left: 0;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 20px;
   }
   .uvod {
     padding: 15px 10px 20px 10px;
